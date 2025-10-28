@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroPlus Management Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loginPage">
+    <h2>NeuroPlus Management Login</h2>
+    <input type="password" id="setPassword" placeholder="Set or Enter Password" />
+    <button onclick="login()">Enter</button>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <header>
+      <h1>NeuroPlus Management Dashboard</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <section>
+      <h2>Add Patient</h2>
+      <input id="name" placeholder="Patient Name" />
+      <input id="diagnosis" placeholder="Diagnosis" />
+      <input id="package" placeholder="Package Type" />
+      <input id="amount" placeholder="Amount (₹)" />
+      <button onclick="addPatient()">Save</button>
+    </section>
+
+    <section>
+      <h2>Patients List</h2>
+      <table id="patientTable">
+        <thead><tr><th>Name</th><th>Diagnosis</th><th>Package</th><th>Amount</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
