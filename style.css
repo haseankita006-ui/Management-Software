@@ -1,0 +1,37 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0fcfc;
+  color: #033f63;
+  margin: 0;
+  padding: 1rem;
+}
+header {
+  background: linear-gradient(135deg, #0a9e8a, #0077b6);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hidden { display: none; }
+input, button {
+  margin: 0.4rem;
+  padding: 0.5rem;
+}
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
